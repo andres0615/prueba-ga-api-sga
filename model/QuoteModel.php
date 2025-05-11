@@ -1,7 +1,6 @@
 <?php
 
 class QuoteModel extends BaseModel {
-    // private $apiAwsUrl = "http://prueba-ga-api-ws.test:8083";
     private $apiAwsUrl = API_WS_URL;
 
     public function getAll()
@@ -20,6 +19,10 @@ class QuoteModel extends BaseModel {
         $result = $this->consultarApiWs($requestData);
 
         $cotizaciones = $result['cotizaciones'];
+
+        if (empty($cotizaciones)) {
+            throw new Exception("No se encontraron cotizaciones para la placa: " . $requestData['placa']);
+        }
 
         // mapeo de los datos provenientes de la api ws
         $cotizaciones = array_map(function($cotizacion) {
