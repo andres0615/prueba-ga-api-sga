@@ -1,6 +1,6 @@
 # API SGA
 
-Esta es api es la capa intermedia entre la capa del frontend y la **API WS**.
+Esta es api es la capa intermedia entre la capa del frontend y la **API Aseguradora ficticia**.
 
 ## Características
 
