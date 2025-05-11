@@ -1,6 +1,6 @@
 # API SGA
 
-Esta es api es la capa intermedia entre la capa del frontend y la **API Aseguradora ficticia**.
+Esta es api es la capa intermedia entre la capa del [frontend](https://github.com/andres0615/prueba-ga-frontend) y la [API Aseguradora ficticia](https://github.com/andres0615/prueba-ga-api-ws).
 
 ## Características
 
