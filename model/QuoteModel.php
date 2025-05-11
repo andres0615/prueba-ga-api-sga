@@ -3,17 +3,6 @@
 class QuoteModel extends BaseModel {
     private $apiAwsUrl = API_WS_URL;
 
-    public function getAll()
-    {
-        // $pdo = $this->getPDO();
-        // $query = "SELECT * FROM quote";
-        // $stmt = $pdo->prepare($query);
-        // $stmt->execute();
-        // $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        // return $users;
-    }
-
     public function cotizar(array $requestData)
     {
         $result = $this->consultarApiWs($requestData);
