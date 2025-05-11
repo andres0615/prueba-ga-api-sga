@@ -6,7 +6,7 @@ Esta es api es la capa intermedia entre la capa del frontend y la **API WS**.
 
 * **PHP 8.2**: Desarrollada con la versión 8.2 de PHP.
 * **Uso de la extensión cURL**: Para realizar peticiones HTTP a la API externa usando `curl`.
-* **URLs amigables**: Diseñada para funcionar bajo un servidor Apache, aprovechando la reescritura de URLs.
+* **URLs amigables**: Diseñada para funcionar bajo un servidor **Apache**, aprovechando la reescritura de URLs.
 
 ## Requisitos previos
 
