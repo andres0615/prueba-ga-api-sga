@@ -22,6 +22,27 @@ Esta es api es la capa intermedia entre la capa del [frontend](https://github.co
    ```ini
    extension=curl
    ```
+3. Para la correcta integracion con el frontend se requiere configurar un **Virtual Host** para esta api. En el archivo `.conf` de tu servidor **Apache** agregar la configuracion del Virtual Host, ejemplo:
+
+    ```txt
+    <VirtualHost *:8083> 
+        DocumentRoot "C:/laragon/www/prueba-ga-api-sga"
+        ServerName prueba-ga-api-sga.test
+        ServerAlias *.prueba-ga-api-sga.test
+        <Directory "C:/laragon/www/prueba-ga-api-sga">
+            AllowOverride All
+            Require all granted
+        </Directory>
+    </VirtualHost>
+    ```
+    
+    Luego agregar el dominio al archivo `C:\Windows\System32\drivers\etc\hosts` de tu sitema operativo, ejemplo:
+
+    ```txt
+    127.0.0.1      prueba-ga-api-sga.test #laragon magic!   
+    ```
+
+    Reinicar **Apache** luego de aplicar las configuraciones.
 
 ## Configuración
 
